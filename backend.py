@@ -69,7 +69,7 @@ def output(original_text):
         #print(sentence)
         #text += sentence
         if sentence in best_sentences:
-            text += ' ' + sentence.replace(sentence, f"<mark>{sentence}</mark>")
+            text += sentence.replace(sentence, f"{sentence}" + ' ')
         else:
             text += ' ' + sentence
 
