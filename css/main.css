@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v2_2 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.v2_4 {
+  width: 604px;
+  height: 647px;
+  background: rgba(142,228,175,1);
+  opacity: 1;
+  position: absolute;
+  top: 188px;
+  left: 669px;
+  border: 2px solid rgba(0,0,0,1);
+  overflow: hidden;
+}
+.v7_3 {
+  width: 24px;
+  height: 136px;
+  background: url("../images/v7_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 167px;
+  left: 168px;
+  overflow: hidden;
+}
+.v2_11 {
+  width: 140px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 227px;
+  left: 641px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v2_13 {
+  width: 78px;
+  height: 55px;
+  background: url("../images/v2_13.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 755px;
+  left: 157px;
+  overflow: hidden;
+}
+.v32_3 {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 126px;
+  left: 68px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v39_5 {
+  width: 66px;
+  height: 55px;
+  background: url("../images/v39_5.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 755px;
+  left: 223px;
+  overflow: hidden;
+}
+.v2_6 {
+  width: 604px;
+  height: 647px;
+  background: rgba(237,245,225,1);
+  opacity: 1;
+  position: absolute;
+  top: 188px;
+  left: 68px;
+  border: 2px solid rgba(245,23,156,1);
+  overflow: hidden;
+}
+.v7_2 {
+  width: 533px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 217px;
+  left: 92px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.name {
+  color: #fff;
+}
