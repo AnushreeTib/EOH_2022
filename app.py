@@ -10,11 +10,16 @@ def main():
 
 @app.route("/", methods=['post'])
 def POST_text():
-  #print("hello")    
   text = request.form['to_summarise']
+  sentence_number = None
+  # sentence_number = request.form['sentence_number']
   
   if len(text) > 0:
-    out = output(text)
+    if sentence_number:
+      out = output(text, summary_sentence_count=sentence_number)
+    else:
+      out = output(text)
+    print(out)
 
     return render_template('index.html', out = out, text = text), 200
     

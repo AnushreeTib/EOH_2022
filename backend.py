@@ -22,27 +22,25 @@ stopwords = nltk.corpus.stopwords.words('english')
 # print(stopwords)
 
 def preprocess(text):
-  formatted_text = text.lower()
-  tokens = []
-  for token in nltk.word_tokenize(formatted_text):
-    tokens.append(token)
-  #print(tokens)
-  tokens = [word for word in tokens if word not in stopwords and word not in string.punctuation]
-  formatted_text = ' '.join(element for element in tokens)
+    text = re.sub(r'\s+', ' ', text)
+    formatted_text = text.lower()
+    tokens = []
+    for token in nltk.word_tokenize(formatted_text):
+        tokens.append(token)
+    #print(tokens)
+    tokens = [word for word in tokens if word not in stopwords and word not in string.punctuation]
+    formatted_text = ' '.join(element for element in tokens)
 
-  return formatted_text
+    return formatted_text
 
-def output(original_text):
+def output(original_text, summary_sentence_count=3):
     formatted_text = preprocess(original_text)
-    # formatted_text
 
     word_frequency = nltk.FreqDist(nltk.word_tokenize(formatted_text))
-    # word_frequency
 
     highest_frequency = max(word_frequency.values())
 
     for word in word_frequency.keys():
-        #print(word)
         word_frequency[word] = (word_frequency[word] / highest_frequency)
 
     sentence_list = nltk.sent_tokenize(original_text)
@@ -58,20 +56,8 @@ def output(original_text):
                 score_sentences[sentence] += word_frequency[word]
 
     
-    best_sentences = heapq.nlargest(3, score_sentences, key = score_sentences.get)
+    best_sentences = heapq.nlargest(summary_sentence_count, score_sentences, key = score_sentences.get)
 
     summary = ' '.join(best_sentences)
 
-    text = ''
-    # display(HTML(f'<h2>Summary</h2>'))
-
-    for sentence in sentence_list:
-        #print(sentence)
-        #text += sentence
-        if sentence in best_sentences:
-            text += sentence.replace(sentence, f"{sentence}" + ' ')
-        else:
-            text += ' ' + sentence
-
-    # display(HTML(f"""{text}"""))
-    return text
+    return summary

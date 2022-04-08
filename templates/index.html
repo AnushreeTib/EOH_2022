@@ -10,23 +10,36 @@
     <div class="v2_2">
       <div class="name"></div>
       <div class="v2_4"></div>
-      <div class="v7_3"></div>
+      <!-- <div class="v7_3"></div> -->
       <span class="v2_11" >
         {{out}}
       </span>
       <div class="v2_13"></div>
       <span class="v32_3">
-        This web application allows you to get a brief summary of a document. 
-        Some examples of documents you can submit include research papers, articles, etc.
+        This web application allows you to get a brief summary of text. Some examples of documents you can submit include research papers, news articles, etc. Our current summary sentence length is set at 3! Feel free to ask about our algorithms or ask for a demonstration!
+        <!-- <br>
+        Input how many sentences you would like your summary to contain: 
+        <form method="post">
+          <textarea id="sentence_number" name="sentence_number" rows="1" cols="10">
+            {{sentence_number}}
+          </textarea> -->
+          <!-- <br>
+          <input type="submit" value="Enter"> 
+        </form> -->
       </span>
       <div class="v39_5"></div>
       <div class="v2_6"></div>
       <span class="v7_2"> 
-        [Text to Summarize] 
+        Write some text to summarize! 
+        <br> 
         <form method="post">
-          <input type="text" name="to_summarise" />
+          <textarea id="to_summarise" name="to_summarise" rows="30" cols="65">
+          {{text}}
+          </textarea>
+          <!-- <input type="text" name="to_summarise" />
+          {{text}} -->
           <br>
-          <input type="submit" value="Enter">
+          <input type="submit" value="Enter"> 
         </form>
       </span>
       <div class="name"></div>

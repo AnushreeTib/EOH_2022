@@ -18,13 +18,14 @@ body {
   color: #fff;
 }
 .v2_4 {
-  width: 604px;
-  height: 647px;
+  /* second box (output) */
+  width: 570px;
+  height: 700px;
   background: rgba(142,228,175,1);
   opacity: 1;
   position: absolute;
-  top: 188px;
-  left: 669px;
+  top: 120px;
+  left: 650px;
   border: 2px solid rgba(0,0,0,1);
   overflow: hidden;
 }
@@ -42,11 +43,11 @@ body {
   overflow: hidden;
 }
 .v2_11 {
-  width: 140px;
+  width: 510px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 227px;
-  left: 641px;
+  top: 150px;
+  left: 670px;
   font-family: Roboto;
   font-weight: Regular;
   font-size: 20px;
@@ -70,8 +71,8 @@ body {
   width: 100%;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 126px;
-  left: 68px;
+  top: 35px;
+  left: 15px;
   font-family: Roboto;
   font-weight: Regular;
   font-size: 20px;
@@ -92,12 +93,13 @@ body {
   overflow: hidden;
 }
 .v2_6 {
-  width: 604px;
-  height: 647px;
+   /* first box (input) */
+  width: 550px;
+  height: 700px;
   background: rgba(237,245,225,1);
   opacity: 1;
   position: absolute;
-  top: 188px;
+  top: 120px;
   left: 68px;
   border: 2px solid rgba(245,23,156,1);
   overflow: hidden;
@@ -106,7 +108,7 @@ body {
   width: 533px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 217px;
+  top: 150px;
   left: 92px;
   font-family: Roboto;
   font-weight: Regular;
