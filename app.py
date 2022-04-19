@@ -8,7 +8,7 @@ app = Flask(__name__)
 def main():
   return render_template('index.html', test = "")
 
-@app.route("/", methods=['post'])
+@app.route("/", methods = ['post'])
 def POST_text():
   text = request.form['to_summarise']
   sentence_number = None
@@ -16,7 +16,7 @@ def POST_text():
   
   if len(text) > 0:
     if sentence_number:
-      out = output(text, summary_sentence_count=sentence_number)
+      out = output(text, summary_sentence_count = sentence_number)
     else:
       out = output(text)
     print(out)

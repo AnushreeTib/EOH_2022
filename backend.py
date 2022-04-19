@@ -33,7 +33,7 @@ def preprocess(text):
 
     return formatted_text
 
-def output(original_text, summary_sentence_count=3):
+def output(original_text, summary_sentence_count = 3):
     formatted_text = preprocess(original_text)
 
     word_frequency = nltk.FreqDist(nltk.word_tokenize(formatted_text))
